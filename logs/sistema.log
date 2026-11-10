@@ -1,0 +1,870 @@
+2026-11-10 01:26:08 | INFO | El sistema inició correctamente.
+2026-11-10 01:26:08 | WARNING | Se realizó una prueba de advertencia.
+2026-11-10 01:26:08 | ERROR | Se presentó un error durante una operación matemática: division by zero
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\prueba_logs.py", line 26, in <module>
+    resultado = 10 / 0
+                ~~~^~~
+ZeroDivisionError: division by zero
+2026-11-10 01:31:17 | INFO | Cliente registrado correctamente. Identificación: 1001234567
+2026-11-10 01:31:17 | ERROR | Error en la validación del correo del cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 01:31:17 | ERROR | No fue posible registrar el cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 38, in __init__
+    self.correo = correo
+    ^^^^^^^^^^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 01:31:17 | ERROR | Error en la validación del teléfono del cliente: El número de teléfono debe tener entre 7 y 10 dígitos.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 147, in telefono
+    raise ErrorCliente(
+        "El número de teléfono debe tener entre 7 y 10 dígitos."
+    )
+excepciones.errores_personalizados.ErrorCliente: El número de teléfono debe tener entre 7 y 10 dígitos.
+2026-11-10 01:31:17 | ERROR | No fue posible registrar el cliente: El número de teléfono debe tener entre 7 y 10 dígitos.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 39, in __init__
+    self.telefono = telefono
+    ^^^^^^^^^^^^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 147, in telefono
+    raise ErrorCliente(
+        "El número de teléfono debe tener entre 7 y 10 dígitos."
+    )
+excepciones.errores_personalizados.ErrorCliente: El número de teléfono debe tener entre 7 y 10 dígitos.
+2026-11-10 01:33:54 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 01:33:54 | ERROR | No fue posible crear el servicio: La tarifa base debe ser un número positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 48, in __init__
+    raise ErrorServicio(
+        "La tarifa base debe ser un número positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La tarifa base debe ser un número positivo.
+2026-11-10 01:33:54 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 01:33:54 | ERROR | Error al validar el costo del servicio Sala de reuniones: El descuento debe estar entre 0 y 100.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 115, in validar_costo
+    raise ErrorServicio(
+        "El descuento debe estar entre 0 y 100."
+    )
+excepciones.errores_personalizados.ErrorServicio: El descuento debe estar entre 0 y 100.
+2026-11-10 01:37:51 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SALA001
+2026-11-10 01:37:51 | INFO | Sala registrada correctamente. Identificador: SALA001
+2026-11-10 01:37:51 | INFO | Costo calculado para la sala SALA001. Duración: 2 horas. Total: $90,000.00
+2026-11-10 01:37:51 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 01:37:51 | ERROR | No fue posible calcular el costo de la sala SALA001: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 126, in calcular_costo
+    self.validar_costo(duracion, descuento)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 01:37:51 | INFO | Servicio creado correctamente: Sala pequeña. Identificador: SALA002
+2026-11-10 01:37:51 | ERROR | Error en los parámetros de la sala: La capacidad debe ser un número entero positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 88, in validar_parametros
+    raise ErrorServicio(
+        "La capacidad debe ser un número entero positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La capacidad debe ser un número entero positivo.
+2026-11-10 01:37:51 | ERROR | No fue posible registrar la sala: La capacidad debe ser un número entero positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 42, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 111, in validar_datos
+    self.validar_parametros()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 88, in validar_parametros
+    raise ErrorServicio(
+        "La capacidad debe ser un número entero positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La capacidad debe ser un número entero positivo.
+2026-11-10 01:55:00 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SALA001
+2026-11-10 01:55:00 | INFO | Sala registrada correctamente: SALA001
+2026-11-10 01:55:00 | INFO | Costo calculado para la sala SALA001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 01:55:00 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 01:55:00 | INFO | Servicio creado correctamente: Sala pequeña. Identificador: SALA002
+2026-11-10 01:55:00 | ERROR | Error al validar los parámetros de la sala SALA002: La capacidad debe ser un número entero positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 118, in validar_parametros
+    raise ErrorServicio(
+        "La capacidad debe ser un número entero positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La capacidad debe ser un número entero positivo.
+2026-11-10 01:55:00 | ERROR | No fue posible registrar la sala SALA002: La capacidad debe ser un número entero positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 50, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 142, in validar_datos
+    self.validar_parametros()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 118, in validar_parametros
+    raise ErrorServicio(
+        "La capacidad debe ser un número entero positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La capacidad debe ser un número entero positivo.
+2026-11-10 01:55:38 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SALA001
+2026-11-10 01:55:38 | INFO | Sala registrada correctamente: SALA001
+2026-11-10 01:55:38 | INFO | Costo calculado para la sala SALA001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 01:55:38 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 01:55:38 | INFO | Servicio creado correctamente: Sala pequeña. Identificador: SALA002
+2026-11-10 01:55:38 | ERROR | Error al validar los parámetros de la sala SALA002: La capacidad debe ser un número entero positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 118, in validar_parametros
+    raise ErrorServicio(
+        "La capacidad debe ser un número entero positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La capacidad debe ser un número entero positivo.
+2026-11-10 01:55:38 | ERROR | No fue posible registrar la sala SALA002: La capacidad debe ser un número entero positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 50, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 142, in validar_datos
+    self.validar_parametros()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 118, in validar_parametros
+    raise ErrorServicio(
+        "La capacidad debe ser un número entero positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La capacidad debe ser un número entero positivo.
+2026-11-10 01:56:33 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SALA001
+2026-11-10 01:56:33 | INFO | Sala registrada correctamente: SALA001
+2026-11-10 01:56:33 | INFO | Costo calculado para la sala SALA001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 01:56:33 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 01:56:33 | INFO | Servicio creado correctamente: Sala pequeña. Identificador: SALA002
+2026-11-10 01:56:33 | ERROR | Error al validar los parámetros de la sala SALA002: La capacidad debe ser un número entero positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 118, in validar_parametros
+    raise ErrorServicio(
+        "La capacidad debe ser un número entero positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La capacidad debe ser un número entero positivo.
+2026-11-10 01:56:33 | ERROR | No fue posible registrar la sala SALA002: La capacidad debe ser un número entero positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 50, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 142, in validar_datos
+    self.validar_parametros()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 118, in validar_parametros
+    raise ErrorServicio(
+        "La capacidad debe ser un número entero positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La capacidad debe ser un número entero positivo.
+2026-11-10 01:58:36 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SALA001
+2026-11-10 01:58:36 | INFO | Sala registrada correctamente: SALA001
+2026-11-10 01:58:36 | INFO | Costo calculado para la sala SALA001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 01:58:36 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 01:58:36 | INFO | Servicio creado correctamente: Sala pequeña. Identificador: SALA002
+2026-11-10 01:58:36 | ERROR | Error al validar los parámetros de la sala SALA002: La capacidad debe ser un número entero positivo.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\reserva_salas.py", line 110, in validar_parametros
+    raise ErrorServicio(
+        "La capacidad debe ser un número entero positivo."
+    )
+excepciones.errores_personalizados.ErrorServicio: La capacidad debe ser un número entero positivo.
+2026-11-10 02:00:50 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:00:50 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:00:50 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 0%. Total: $100,000.00
+2026-11-10 02:00:50 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:00:50 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:00:50 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:00:50 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:00:50 | ERROR | Error al validar la cantidad solicitada para el equipo EQ001: No hay suficientes equipos disponibles.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+2026-11-10 02:00:50 | INFO | Servicio creado correctamente: Asesoría general. Identificador: ASE002
+2026-11-10 02:01:03 | INFO | Cliente registrado correctamente. Identificación: 1001234567
+2026-11-10 02:01:03 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:01:03 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:01:03 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 02:01:03 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:01:03 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:01:03 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:01:03 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:01:03 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 02:02:31 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:02:31 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:02:31 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 0%. Total: $100,000.00
+2026-11-10 02:02:31 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:02:31 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:02:31 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:02:31 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:02:31 | INFO | Asesoría registrada correctamente: ASE001
+2026-11-10 02:02:31 | INFO | Costo de asesoría calculado. Identificador: ASE001. Duración: 2 horas. Descuento: 0%. Total: $160,000.00
+2026-11-10 02:02:31 | ERROR | Error al validar la cantidad solicitada para el equipo EQ001: No hay suficientes equipos disponibles.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+2026-11-10 02:02:31 | INFO | Servicio creado correctamente: Asesoría general. Identificador: ASE002
+2026-11-10 02:02:31 | ERROR | Error al validar los parámetros de la asesoría ASE002: Debe especificar la especialidad de la asesoría.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\asesoria.py", line 119, in validar_parametros
+    raise ErrorServicio(
+        "Debe especificar la especialidad de la asesoría."
+    )
+excepciones.errores_personalizados.ErrorServicio: Debe especificar la especialidad de la asesoría.
+2026-11-10 02:02:41 | INFO | Cliente registrado correctamente. Identificación: 1001234567
+2026-11-10 02:02:41 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:02:41 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:02:41 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 02:02:41 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:02:41 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:02:41 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:02:41 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:02:41 | INFO | Asesoría registrada correctamente: ASE001
+2026-11-10 02:02:41 | INFO | Costo de asesoría calculado. Identificador: ASE001. Duración: 2 horas. Descuento: 0%. Total: $160,000.00
+2026-11-10 02:02:41 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 02:04:27 | INFO | Cliente registrado correctamente. Identificación: 1001234567
+2026-11-10 02:04:27 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:04:27 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:04:27 | INFO | Reserva creada correctamente. Identificador: RES001. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:04:27 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 02:04:27 | INFO | Costo de reserva calculado. Identificador: RES001. Total: $90,000.00
+2026-11-10 02:04:27 | INFO | Reserva confirmada. Identificador: RES001
+2026-11-10 02:04:27 | INFO | Reserva procesada correctamente. Identificador: RES001
+2026-11-10 02:04:27 | ERROR | Error al cancelar la reserva RES001: No se puede cancelar una reserva que ya fue procesada.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 239, in cancelar
+    raise OperacionNoPermitida(
+        "No se puede cancelar una reserva que ya fue procesada."
+    )
+excepciones.errores_personalizados.OperacionNoPermitida: No se puede cancelar una reserva que ya fue procesada.
+2026-11-10 02:04:27 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:04:27 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:04:27 | INFO | Reserva creada correctamente. Identificador: RES002. Cliente: Carlos Pérez. Servicio: Alquiler de computadores. Estado: Pendiente
+2026-11-10 02:04:27 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:04:27 | INFO | Costo de reserva calculado. Identificador: RES002. Total: $162,000.00
+2026-11-10 02:04:27 | INFO | Reserva confirmada. Identificador: RES002
+2026-11-10 02:04:27 | INFO | Reserva creada correctamente. Identificador: RES003. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:04:27 | INFO | Reserva cancelada. Identificador: RES003
+2026-11-10 02:04:27 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:04:27 | INFO | Asesoría registrada correctamente: ASE001
+2026-11-10 02:04:27 | INFO | Reserva creada correctamente. Identificador: RES004. Cliente: Carlos Pérez. Servicio: Asesoría tecnológica. Estado: Pendiente
+2026-11-10 02:04:27 | INFO | Costo de asesoría calculado. Identificador: ASE001. Duración: 2 horas. Descuento: 0%. Total: $160,000.00
+2026-11-10 02:04:27 | INFO | Costo de reserva calculado. Identificador: RES004. Total: $160,000.00
+2026-11-10 02:04:27 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 02:04:27 | ERROR | No fue posible crear la reserva RES005: No fue posible validar los datos de la reserva.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 129, in validar_datos
+    self._servicio.validar_costo(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._duracion,
+        ^^^^^^^^^^^^^^^
+        self._descuento
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 60, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 151, in validar_datos
+    raise ErrorReserva(
+        "No fue posible validar los datos de la reserva."
+    ) from error
+excepciones.errores_personalizados.ErrorReserva: No fue posible validar los datos de la reserva.
+2026-11-10 02:04:27 | ERROR | Error al confirmar la reserva RES003: Solamente se pueden confirmar reservas pendientes.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 200, in confirmar
+    raise OperacionNoPermitida(
+        "Solamente se pueden confirmar reservas pendientes."
+    )
+excepciones.errores_personalizados.OperacionNoPermitida: Solamente se pueden confirmar reservas pendientes.
+2026-11-10 02:04:30 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:04:30 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:04:30 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 0%. Total: $100,000.00
+2026-11-10 02:04:30 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:04:30 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:04:30 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:04:30 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:04:30 | INFO | Asesoría registrada correctamente: ASE001
+2026-11-10 02:04:30 | INFO | Costo de asesoría calculado. Identificador: ASE001. Duración: 2 horas. Descuento: 0%. Total: $160,000.00
+2026-11-10 02:04:30 | ERROR | Error al validar la cantidad solicitada para el equipo EQ001: No hay suficientes equipos disponibles.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+2026-11-10 02:04:30 | INFO | Servicio creado correctamente: Asesoría general. Identificador: ASE002
+2026-11-10 02:04:30 | ERROR | Error al validar los parámetros de la asesoría ASE002: Debe especificar la especialidad de la asesoría.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\asesoria.py", line 119, in validar_parametros
+    raise ErrorServicio(
+        "Debe especificar la especialidad de la asesoría."
+    )
+excepciones.errores_personalizados.ErrorServicio: Debe especificar la especialidad de la asesoría.
+2026-11-10 02:08:27 | INFO | Cliente registrado correctamente. Identificación: 1001234567
+2026-11-10 02:08:27 | ERROR | Error en la validación del correo del cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 02:08:27 | ERROR | No fue posible registrar el cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 38, in __init__
+    self.correo = correo
+    ^^^^^^^^^^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 02:08:27 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:08:27 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:08:27 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:08:27 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:08:27 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:08:27 | INFO | Asesoría registrada correctamente: ASE001
+2026-11-10 02:08:27 | INFO | Reserva creada correctamente. Identificador: RES001. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:08:27 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 02:08:27 | INFO | Costo de reserva calculado. Identificador: RES001. Total: $90,000.00
+2026-11-10 02:08:27 | INFO | Reserva confirmada. Identificador: RES001
+2026-11-10 02:08:27 | INFO | Reserva procesada correctamente. Identificador: RES001
+2026-11-10 02:08:27 | INFO | Reserva creada correctamente. Identificador: RES002. Cliente: Carlos Pérez. Servicio: Alquiler de computadores. Estado: Pendiente
+2026-11-10 02:08:27 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:08:27 | INFO | Costo de reserva calculado. Identificador: RES002. Total: $162,000.00
+2026-11-10 02:08:27 | INFO | Reserva confirmada. Identificador: RES002
+2026-11-10 02:08:27 | INFO | Reserva creada correctamente. Identificador: RES003. Cliente: Carlos Pérez. Servicio: Asesoría tecnológica. Estado: Pendiente
+2026-11-10 02:08:27 | INFO | Costo de asesoría calculado. Identificador: ASE001. Duración: 2 horas. Descuento: 0%. Total: $160,000.00
+2026-11-10 02:08:27 | INFO | Costo de reserva calculado. Identificador: RES003. Total: $160,000.00
+2026-11-10 02:08:27 | INFO | Reserva creada correctamente. Identificador: RES004. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:08:27 | INFO | Reserva cancelada. Identificador: RES004
+2026-11-10 02:08:27 | ERROR | Error al validar la cantidad solicitada para el equipo EQ001: No hay suficientes equipos disponibles.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+2026-11-10 02:08:27 | ERROR | No fue posible crear la reserva RES005: No fue posible validar los datos de la reserva.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 138, in validar_datos
+    self._servicio.validar_cantidad(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._cantidad
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 60, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 151, in validar_datos
+    raise ErrorReserva(
+        "No fue posible validar los datos de la reserva."
+    ) from error
+excepciones.errores_personalizados.ErrorReserva: No fue posible validar los datos de la reserva.
+2026-11-10 02:08:27 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 02:08:27 | ERROR | No fue posible crear la reserva RES006: No fue posible validar los datos de la reserva.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 129, in validar_datos
+    self._servicio.validar_costo(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._duracion,
+        ^^^^^^^^^^^^^^^
+        self._descuento
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 60, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 151, in validar_datos
+    raise ErrorReserva(
+        "No fue posible validar los datos de la reserva."
+    ) from error
+excepciones.errores_personalizados.ErrorReserva: No fue posible validar los datos de la reserva.
+2026-11-10 02:08:27 | ERROR | Error al cancelar la reserva RES001: No se puede cancelar una reserva que ya fue procesada.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 239, in cancelar
+    raise OperacionNoPermitida(
+        "No se puede cancelar una reserva que ya fue procesada."
+    )
+excepciones.errores_personalizados.OperacionNoPermitida: No se puede cancelar una reserva que ya fue procesada.
+2026-11-10 02:08:27 | INFO | Servicio creado correctamente: Asesoría general. Identificador: ASE002
+2026-11-10 02:08:27 | ERROR | Error al validar los parámetros de la asesoría ASE002: Debe especificar la especialidad de la asesoría.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\asesoria.py", line 119, in validar_parametros
+    raise ErrorServicio(
+        "Debe especificar la especialidad de la asesoría."
+    )
+excepciones.errores_personalizados.ErrorServicio: Debe especificar la especialidad de la asesoría.
+2026-11-10 02:08:27 | INFO | Finalización de la ejecución principal del sistema.
+2026-11-10 02:09:48 | INFO | Cliente registrado correctamente. Identificación: 1001234567
+2026-11-10 02:09:48 | ERROR | Error en la validación del correo del cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 02:09:48 | ERROR | No fue posible registrar el cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 38, in __init__
+    self.correo = correo
+    ^^^^^^^^^^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 02:09:48 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:09:48 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:09:48 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:09:48 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:09:48 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:09:48 | INFO | Asesoría registrada correctamente: ASE001
+2026-11-10 02:09:48 | INFO | Reserva creada correctamente. Identificador: RES001. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:09:48 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 02:09:48 | INFO | Costo de reserva calculado. Identificador: RES001. Total: $90,000.00
+2026-11-10 02:09:48 | INFO | Reserva confirmada. Identificador: RES001
+2026-11-10 02:09:48 | INFO | Reserva procesada correctamente. Identificador: RES001
+2026-11-10 02:09:48 | INFO | Reserva creada correctamente. Identificador: RES002. Cliente: Carlos Pérez. Servicio: Alquiler de computadores. Estado: Pendiente
+2026-11-10 02:09:48 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:09:48 | INFO | Costo de reserva calculado. Identificador: RES002. Total: $162,000.00
+2026-11-10 02:09:48 | INFO | Reserva confirmada. Identificador: RES002
+2026-11-10 02:09:48 | INFO | Reserva creada correctamente. Identificador: RES003. Cliente: Carlos Pérez. Servicio: Asesoría tecnológica. Estado: Pendiente
+2026-11-10 02:09:48 | INFO | Costo de asesoría calculado. Identificador: ASE001. Duración: 2 horas. Descuento: 0%. Total: $160,000.00
+2026-11-10 02:09:48 | INFO | Costo de reserva calculado. Identificador: RES003. Total: $160,000.00
+2026-11-10 02:09:48 | INFO | Reserva creada correctamente. Identificador: RES004. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:09:48 | INFO | Reserva cancelada. Identificador: RES004
+2026-11-10 02:09:48 | ERROR | Error al validar la cantidad solicitada para el equipo EQ001: No hay suficientes equipos disponibles.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+2026-11-10 02:09:48 | ERROR | No fue posible crear la reserva RES005: No fue posible validar los datos de la reserva.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 138, in validar_datos
+    self._servicio.validar_cantidad(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._cantidad
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 60, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 151, in validar_datos
+    raise ErrorReserva(
+        "No fue posible validar los datos de la reserva."
+    ) from error
+excepciones.errores_personalizados.ErrorReserva: No fue posible validar los datos de la reserva.
+2026-11-10 02:09:48 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 02:09:48 | ERROR | No fue posible crear la reserva RES006: No fue posible validar los datos de la reserva.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 129, in validar_datos
+    self._servicio.validar_costo(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._duracion,
+        ^^^^^^^^^^^^^^^
+        self._descuento
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 60, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 151, in validar_datos
+    raise ErrorReserva(
+        "No fue posible validar los datos de la reserva."
+    ) from error
+excepciones.errores_personalizados.ErrorReserva: No fue posible validar los datos de la reserva.
+2026-11-10 02:09:48 | ERROR | Error al cancelar la reserva RES001: No se puede cancelar una reserva que ya fue procesada.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 239, in cancelar
+    raise OperacionNoPermitida(
+        "No se puede cancelar una reserva que ya fue procesada."
+    )
+excepciones.errores_personalizados.OperacionNoPermitida: No se puede cancelar una reserva que ya fue procesada.
+2026-11-10 02:09:48 | INFO | Servicio creado correctamente: Asesoría general. Identificador: ASE002
+2026-11-10 02:09:48 | ERROR | Error al validar los parámetros de la asesoría ASE002: Debe especificar la especialidad de la asesoría.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\asesoria.py", line 119, in validar_parametros
+    raise ErrorServicio(
+        "Debe especificar la especialidad de la asesoría."
+    )
+excepciones.errores_personalizados.ErrorServicio: Debe especificar la especialidad de la asesoría.
+2026-11-10 02:09:48 | INFO | Finalización de la ejecución principal del sistema.
+2026-11-10 02:13:48 | INFO | Cliente registrado correctamente. Identificación: 1001234567
+2026-11-10 02:13:48 | ERROR | Error en la validación del correo del cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 02:13:48 | ERROR | No fue posible registrar el cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 38, in __init__
+    self.correo = correo
+    ^^^^^^^^^^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 02:13:48 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:13:48 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:13:48 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:13:48 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:13:48 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:13:48 | INFO | Asesoría registrada correctamente: ASE001
+2026-11-10 02:13:48 | INFO | Reserva creada correctamente. Identificador: RES001. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:13:48 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 02:13:48 | INFO | Costo de reserva calculado. Identificador: RES001. Total: $90,000.00
+2026-11-10 02:13:48 | INFO | Reserva confirmada. Identificador: RES001
+2026-11-10 02:13:48 | INFO | Reserva procesada correctamente. Identificador: RES001
+2026-11-10 02:13:48 | INFO | Reserva creada correctamente. Identificador: RES002. Cliente: Carlos Pérez. Servicio: Alquiler de computadores. Estado: Pendiente
+2026-11-10 02:13:48 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:13:48 | INFO | Costo de reserva calculado. Identificador: RES002. Total: $162,000.00
+2026-11-10 02:13:48 | INFO | Reserva confirmada. Identificador: RES002
+2026-11-10 02:13:48 | INFO | Reserva creada correctamente. Identificador: RES003. Cliente: Carlos Pérez. Servicio: Asesoría tecnológica. Estado: Pendiente
+2026-11-10 02:13:48 | INFO | Costo de asesoría calculado. Identificador: ASE001. Duración: 2 horas. Descuento: 0%. Total: $160,000.00
+2026-11-10 02:13:48 | INFO | Costo de reserva calculado. Identificador: RES003. Total: $160,000.00
+2026-11-10 02:13:48 | INFO | Reserva creada correctamente. Identificador: RES004. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:13:48 | INFO | Reserva cancelada. Identificador: RES004
+2026-11-10 02:13:48 | ERROR | Error al validar la cantidad solicitada para el equipo EQ001: No hay suficientes equipos disponibles.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+2026-11-10 02:13:48 | ERROR | No fue posible crear la reserva RES005: No fue posible validar los datos de la reserva.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 138, in validar_datos
+    self._servicio.validar_cantidad(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._cantidad
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 60, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 151, in validar_datos
+    raise ErrorReserva(
+        "No fue posible validar los datos de la reserva."
+    ) from error
+excepciones.errores_personalizados.ErrorReserva: No fue posible validar los datos de la reserva.
+2026-11-10 02:13:48 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 02:13:48 | ERROR | No fue posible crear la reserva RES006: No fue posible validar los datos de la reserva.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 129, in validar_datos
+    self._servicio.validar_costo(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._duracion,
+        ^^^^^^^^^^^^^^^
+        self._descuento
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 60, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 151, in validar_datos
+    raise ErrorReserva(
+        "No fue posible validar los datos de la reserva."
+    ) from error
+excepciones.errores_personalizados.ErrorReserva: No fue posible validar los datos de la reserva.
+2026-11-10 02:13:48 | ERROR | Error al cancelar la reserva RES001: No se puede cancelar una reserva que ya fue procesada.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 239, in cancelar
+    raise OperacionNoPermitida(
+        "No se puede cancelar una reserva que ya fue procesada."
+    )
+excepciones.errores_personalizados.OperacionNoPermitida: No se puede cancelar una reserva que ya fue procesada.
+2026-11-10 02:13:48 | INFO | Servicio creado correctamente: Asesoría general. Identificador: ASE002
+2026-11-10 02:13:48 | ERROR | Error al validar los parámetros de la asesoría ASE002: Debe especificar la especialidad de la asesoría.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\asesoria.py", line 119, in validar_parametros
+    raise ErrorServicio(
+        "Debe especificar la especialidad de la asesoría."
+    )
+excepciones.errores_personalizados.ErrorServicio: Debe especificar la especialidad de la asesoría.
+2026-11-10 02:13:48 | INFO | Finalización de la ejecución principal del sistema.
+2026-11-10 02:16:42 | INFO | Cliente registrado correctamente. Identificación: 1001234567
+2026-11-10 02:16:42 | ERROR | Error en la validación del correo del cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 02:16:42 | ERROR | No fue posible registrar el cliente: El correo electrónico no tiene un formato válido.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 38, in __init__
+    self.correo = correo
+    ^^^^^^^^^^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\cliente.py", line 112, in correo
+    raise ErrorCliente(
+        "El correo electrónico no tiene un formato válido."
+    )
+excepciones.errores_personalizados.ErrorCliente: El correo electrónico no tiene un formato válido.
+2026-11-10 02:16:42 | INFO | Servicio creado correctamente: Sala de reuniones. Identificador: SAL001
+2026-11-10 02:16:42 | INFO | Sala registrada correctamente: SAL001
+2026-11-10 02:16:42 | INFO | Servicio creado correctamente: Alquiler de computadores. Identificador: EQ001
+2026-11-10 02:16:42 | INFO | Servicio de alquiler de equipos registrado: EQ001
+2026-11-10 02:16:42 | INFO | Servicio creado correctamente: Asesoría tecnológica. Identificador: ASE001
+2026-11-10 02:16:42 | INFO | Asesoría registrada correctamente: ASE001
+2026-11-10 02:16:42 | INFO | Reserva creada correctamente. Identificador: RES001. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:16:42 | INFO | Costo calculado para la sala SAL001. Duración: 2 horas. Descuento: 10%. Total: $90,000.00
+2026-11-10 02:16:42 | INFO | Costo de reserva calculado. Identificador: RES001. Total: $90,000.00
+2026-11-10 02:16:42 | INFO | Reserva confirmada. Identificador: RES001
+2026-11-10 02:16:42 | INFO | Reserva procesada correctamente. Identificador: RES001
+2026-11-10 02:16:42 | INFO | Reserva creada correctamente. Identificador: RES002. Cliente: Carlos Pérez. Servicio: Alquiler de computadores. Estado: Pendiente
+2026-11-10 02:16:42 | INFO | Costo de alquiler calculado para el equipo EQ001. Duración: 4 horas. Cantidad: 3. Descuento: 10%. Total: $162,000.00
+2026-11-10 02:16:42 | INFO | Costo de reserva calculado. Identificador: RES002. Total: $162,000.00
+2026-11-10 02:16:42 | INFO | Reserva confirmada. Identificador: RES002
+2026-11-10 02:16:42 | INFO | Reserva creada correctamente. Identificador: RES003. Cliente: Carlos Pérez. Servicio: Asesoría tecnológica. Estado: Pendiente
+2026-11-10 02:16:42 | INFO | Costo de asesoría calculado. Identificador: ASE001. Duración: 2 horas. Descuento: 0%. Total: $160,000.00
+2026-11-10 02:16:42 | INFO | Costo de reserva calculado. Identificador: RES003. Total: $160,000.00
+2026-11-10 02:16:42 | INFO | Reserva creada correctamente. Identificador: RES004. Cliente: Carlos Pérez. Servicio: Sala de reuniones. Estado: Pendiente
+2026-11-10 02:16:42 | INFO | Reserva cancelada. Identificador: RES004
+2026-11-10 02:16:42 | ERROR | Error al validar la cantidad solicitada para el equipo EQ001: No hay suficientes equipos disponibles.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+2026-11-10 02:16:42 | ERROR | No fue posible crear la reserva RES005: No fue posible validar los datos de la reserva.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 138, in validar_datos
+    self._servicio.validar_cantidad(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._cantidad
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\alquiler_equipos.py", line 180, in validar_cantidad
+    raise ErrorServicio(
+        "No hay suficientes equipos disponibles."
+    )
+excepciones.errores_personalizados.ErrorServicio: No hay suficientes equipos disponibles.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 60, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 151, in validar_datos
+    raise ErrorReserva(
+        "No fue posible validar los datos de la reserva."
+    ) from error
+excepciones.errores_personalizados.ErrorReserva: No fue posible validar los datos de la reserva.
+2026-11-10 02:16:42 | ERROR | Error al validar el costo del servicio Sala de reuniones: La duración debe ser un número mayor que cero.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+2026-11-10 02:16:42 | ERROR | No fue posible crear la reserva RES006: No fue posible validar los datos de la reserva.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 129, in validar_datos
+    self._servicio.validar_costo(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._duracion,
+        ^^^^^^^^^^^^^^^
+        self._descuento
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\servicio.py", line 106, in validar_costo
+    raise ErrorServicio(
+        "La duración debe ser un número mayor que cero."
+    )
+excepciones.errores_personalizados.ErrorServicio: La duración debe ser un número mayor que cero.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 60, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 151, in validar_datos
+    raise ErrorReserva(
+        "No fue posible validar los datos de la reserva."
+    ) from error
+excepciones.errores_personalizados.ErrorReserva: No fue posible validar los datos de la reserva.
+2026-11-10 02:16:42 | ERROR | Error al cancelar la reserva RES001: No se puede cancelar una reserva que ya fue procesada.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\modelos\reserva.py", line 239, in cancelar
+    raise OperacionNoPermitida(
+        "No se puede cancelar una reserva que ya fue procesada."
+    )
+excepciones.errores_personalizados.OperacionNoPermitida: No se puede cancelar una reserva que ya fue procesada.
+2026-11-10 02:16:42 | INFO | Servicio creado correctamente: Asesoría general. Identificador: ASE002
+2026-11-10 02:16:42 | ERROR | Error al validar los parámetros de la asesoría ASE002: Debe especificar la especialidad de la asesoría.
+Traceback (most recent call last):
+  File "d:\MAU A. ECHEVERRIA\INGENIERIA DE SISTEMAS (UNAD)\SEMESTRE IV\PROGRAMACIÓN\TAREA 4\Sistema_Software_FJ\servicios\asesoria.py", line 119, in validar_parametros
+    raise ErrorServicio(
+        "Debe especificar la especialidad de la asesoría."
+    )
+excepciones.errores_personalizados.ErrorServicio: Debe especificar la especialidad de la asesoría.
+2026-11-10 02:16:42 | INFO | Finalización de la ejecución principal del sistema.
