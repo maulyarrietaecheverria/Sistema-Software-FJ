@@ -144,5 +144,12 @@ Se utiliza Git y GitHub como herramientas de control de versiones y almacenamien
 
 ## 11. Autores
 
-Mauly Arrieta Echeverria
-Dina Maria Acevedo Zabaleta
+Grupo colaborativo: 213023_77  
+Curso: Programación – UNAD
+
+Integrantes:
+
+1. Dina María Acevedo Zabaleta.
+2. Mauly Arrieta Echeverria.
+3. Luis Carlos Jiménez Ricardo.
+4. Luis Eduardo Villegas Puche.
